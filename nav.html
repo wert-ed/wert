@@ -1,0 +1,686 @@
+<link rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<style>
+  body {
+    margin: 0%;
+    transition: 0.5s;
+    background-color: #222;
+  }
+
+  nav {
+    width: 100%;
+    display: flex;
+    margin: 0;
+    overflow: auto;
+    background-color: none;
+    position: sticky;
+    background-color: #222;
+  }
+
+  nav ul {
+    overflow: auto;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+  }
+
+  header {
+    display: flex;
+    top: 0;
+    position: sticky;
+    z-index: 10;
+  }
+
+  nav li {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-right: 10px;
+    padding-left: 10px;
+    color: #007bff;
+    cursor: pointer;
+    font-weight: 200px;
+
+  }
+
+  n:hover {
+    border-bottom: 2px solid #006eff;
+  }
+
+  nav .left {
+    display: flex;
+    margin: auto;
+    margin-left: unset;
+  }
+
+  nav .right {
+    display: flex;
+    margin: 0;
+    padding-bottom: unset;
+  }
+
+  .material-symbols-outlined {
+    font-size: 2000px;
+    color: #4a3dff;
+    padding: 10px;
+    transition: 0.5s;
+  }
+
+  .material-symbols-outlined:hover {
+    color: #ff0000;
+    cursor: pointer;
+    text-shadow: 0px 0px 10px #000000;
+    transition: 0.5s;
+  }
+
+  .container {
+    display: flex;
+    width: 100%;
+  }
+
+  .sidenavmenu {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 20;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    left: 0;
+    background-color: #1a1919;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+    box-shadow: 0px 0px 20px #000;
+  }
+
+  /* The navigation menu links */
+  .sidenavmenu a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #f3f3f3;
+    display: block;
+    transition: 0.3s;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+
+  /* When you mouse over the navigation links, change their color */
+  .sidenavmenu a:hover {
+    color: #0057fa;
+  }
+
+  .closehover a:hover {
+    color: #ff2e2e;
+  }
+
+  /* Position and style the close button (top right corner) */
+  .sidenavmenu .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  .navlogo {
+    display: block;
+    width: 250px;
+    height: 50px;
+    justify-content: center;
+    overflow: auto;
+  }
+
+  .navlogo1 {
+    display: none;
+    width: 0;
+    height: 0;
+    overflow: auto;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    transition: 0.5s;
+  }
+
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #222121;
+    min-width: 160px;
+    box-shadow: 0px 0px 10px #a9faf6;
+    z-index: 10;
+    float: right;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    transition: 0.5s;
+  }
+
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex;
+    border-radius: 5px;
+    z-index: 10;
+  }
+
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #292929;
+  }
+
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {
+    display: block;
+    margin: 0px 33px;
+    transition: 10s;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .computer-img {
+    width: 250px;
+    display: flex;
+
+  }
+
+  .head-text {
+    margin: 10px;
+    /* padding-top: 50px; */
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    font-family: 'Pacifico', cursive;
+    font-size: xx-large;
+    text-shadow: 0px 0px 20px #ff1414;
+    /* background-color: rgba(0, 0, 0, 0.7);
+    border: 3px solid #fff;
+    border-radius: 8px; */
+  }
+
+  .container2 {
+    /* border: 3px solid #fff;
+    border-radius: 8px; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 98%;
+    margin: auto;
+    /* background-color: rgba(0, 0, 0, 0.7); */
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .btnimg {
+    width: 100px;
+    background-color: rgba(77, 163, 255, 0.7);
+    box-shadow: 0px 0px 20px #000000ff;
+    border-radius: 50%;
+    transition: 0.5s;
+  }
+
+  .btnimg:hover {
+    transition: 0.5s;
+    box-shadow: 0px 0px 10px #6600ff;
+  }
+
+  .test {
+    color: #4da3ffff;
+  }
+
+
+  .container-bottom {
+    background-color: #e6e6e6;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+  }
+
+  .bottom {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .dropdown1 {
+    position: relative;
+    display: inline-block;
+    transition: 0.5s;
+  }
+
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content1 {
+    display: none;
+    position: absolute;
+    background-color: #222121;
+    min-width: 200px;
+    box-shadow: 0px 0px 10px #a9faf6;
+    z-index: 1;
+    float: right;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    transition: 0.5s;
+  }
+
+  /* Links inside the dropdown */
+  .dropdown-content1 a {
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex;
+    border-radius: 5px;
+  }
+
+  /* Change color of dropdown links on hover */
+  .dropdown-content1 a:hover {
+    background-color: #292929;
+  }
+
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show1 {
+    display: block;
+    margin: 0px 33px;
+    transition: 10s;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .container2 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .dots {
+    position: relative;
+    display: flex;
+  }
+
+  .container2 .snow {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    z-index: 2;
+    /* background-color: #00fbff; */
+    /* border-radius: 50%; */
+    margin: 0 4px;
+    /* box-shadow: 0 0 0 10px #00fbff,
+      0 0 50px #00fbff,
+      0 0 100px #00fbff; */
+    /* opacity: 0.5; */
+    animation: animate 15s linear infinite;
+    animation-duration: calc(1200s/ var(--i));
+
+  }
+
+  .container2 span:nth-child(even) {
+    background-color: #00ff59;
+    box-shadow: 0 0 0 10px #1aff6a,
+      0 0 50px #1aff6a,
+      0 0 100px #1aff6a;
+    z-index: 1;
+  }
+
+  @keyframes animate {
+    0% {
+      transform: translateY(-200vh) scale(0);
+    }
+
+    100% {
+      transform: translateY(40vh) scale(1);
+    }
+  }
+
+  .wert {
+    z-index: 9;
+    padding-top: 165px;
+    margin: auto;
+    /* display: flex; */
+    justify-content: center;
+    align-content: center;
+    /* flex-direction: row; */
+    position: absolute;
+    /* flex-wrap: wrap; */
+    color: #066ad5;
+    /* left: unset; */
+    font-family: 'Rubik', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    /* text-shadow: 0 0 20px #0f549e, 0px 0px 60px #0f549e /*, 0 0 100px #0f549e*/
+    ;
+    font-size: 100px;
+    font-weight: 900;
+    background-image: url('img/bg img.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  .styler {
+    color: #d9d9d9;
+    padding: 5px;
+    display: flex;
+    font-weight: 400;
+
+    justify-content: space-between;
+    align-content: space-around;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    font-family: 'Concert One', sans-serif;
+    letter-spacing: 1.5px;
+  }
+
+  .blue {
+    background-color: #005ae0;
+  }
+
+  .red {
+    background-color: #cf4500;
+  }
+
+  .green {
+    background-color: #00b300;
+  }
+
+  .purple {
+    background-color: #7e00b3;
+  }
+
+  .spacer {
+    aspect-ratio: 960/300;
+    width: 100%;
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+
+  .layer1 {
+    background-image: url("img/wave1.svg");
+  }
+
+  .layer2 {
+    background-image: url("img/wave2.svg");
+  }
+
+  .layer3 {
+    background-image: url("img/wave3.svg");
+  }
+
+  .layer4 {
+    background-image: url("img/wave4.svg");
+  }
+
+  .layer5 {
+    background-image: url("img/wave5.svg");
+  }
+
+  .preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+
+  .spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    border-top: 4px solid #3498db;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  /* Content styles */
+  .content {
+    display: none;
+    /* Content is hidden initially */
+  }
+
+  .sidenavmenu1 {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 20;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    right: 0;
+    background-color: #1a1919;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+    box-shadow: 0px 0px 20px #000;
+  }
+
+  /* The navigation menu links */
+  .sidenavmenu1 a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #f3f3f3;
+    display: block;
+    transition: 0.3s;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+
+  /* When you mouse over the navigation links, change their color */
+  .sidenavmenu1 a:hover {
+    color: #0057fa;
+  }
+
+  .closehover1 a:hover {
+    color: #ff2e2e;
+  }
+
+  /* Position and style the close button (top right corner) */
+  .sidenavmenu1 .closebtn1 {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  .dropdown2 {
+    position: relative;
+    display: inline-block;
+    transition: 0.5s;
+  }
+
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content2 {
+    display: none;
+    position: absolute;
+    background-color: #222121;
+    min-width: 160px;
+    box-shadow: 0px 0px 10px #a9faf6;
+    z-index: 10;
+    float: right;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    transition: 0.5s;
+  }
+
+  /* Links inside the dropdown */
+  .dropdown-content2 a {
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex;
+    border-radius: 5px;
+    z-index: 10;
+  }
+
+  /* Change color of dropdown links on hover */
+  .dropdown-content2 a:hover {
+    background-color: #292929;
+  }
+
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show2 {
+    display: block;
+    margin: 0px 33px;
+    transition: 10s;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .dropdown3 {
+    position: relative;
+    display: inline-block;
+    transition: 0.5s;
+  }
+
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content3 {
+    display: none;
+    position: absolute;
+    background-color: #222121;
+    min-width: 160px;
+    box-shadow: 0px 0px 10px #a9faf6;
+    z-index: 10;
+    float: right;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    transition: 0.5s;
+  }
+
+  /* Links inside the dropdown */
+  .dropdown-content3 a {
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex;
+    border-radius: 5px;
+    z-index: 10;
+  }
+
+  /* Change color of dropdown links on hover */
+  .dropdown-content3 a:hover {
+    background-color: #292929;
+  }
+
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show3 {
+    display: block;
+    margin: 0px 33px;
+    transition: 10s;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  #search {
+    background-color: transparent;
+    border: none;
+    color: #3c34ef;
+    width: 130px;
+    display: block;
+  }
+
+  input:focus {
+    border: none;
+  }
+
+  .search-wrapper {
+    background-color: white;
+    display: flex;
+    border-radius: 10px;
+    height: 30px;
+  }
+
+  .search-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+</style>
+
+<header>
+  <nav>
+    <ul>
+      <div class="container">
+        <div class="left">
+          <li><span class="material-symbols-outlined" onclick="openNav()">menu</span>
+          </li>
+
+        </div>
+        <!-- <img class="navlogo" src="img/navimg.png">
+        <img class="navlogo1" src="img/clogo.png"> -->
+        <div class="right">
+          <div class="search-container">
+            <div class="search-wrapper">
+              <li><input placeholder="Search" id="search"></li>
+              <li><span class="material-symbols-outlined search-event">search</span></li>
+            </div>
+          </div>
+          <li class="a n">Home</li>
+          <li class="a n">Account</li>
+          <li class="a n">Account</li>
+          <li class="a n">Account</li>
+          <li class="b"><span class="material-symbols-outlined b" onclick="openNav1()">view_cozy</span>
+          </li>
+        </div>
+      </div>
+    </ul>
+  </nav>
+</header>

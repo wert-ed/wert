@@ -1,0 +1,28 @@
+{
+  "name": "Wert.ED",
+  "short_name": "Wert",
+  "description": "Pg Network's Portfolio Website",
+  "icons": [
+    {
+      "src": "img/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "img/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/index.html",
+  "id": "/index.html",
+  "display": "standalone",
+  "background_color": "#222222",
+  "theme_color": "#222222",
+  "orientation": "any",
+  "scope": "/",
+  "lang": "en",
+  "prefer_related_applications": false,
+  "related_applications": [],
+  "categories": ["utility"]
+}

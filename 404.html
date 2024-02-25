@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #333;
+        }
+        canvas {
+            border: 2px solid #333;
+            margin: 20px auto;
+            display: block;
+            cursor: crosshair;
+        }
+        #clearBtn {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>404 - Page Not Found</h1>
+    <p>The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.</p>
+    <a href="/">Back to Home</a>
+
+    <!-- Drawing Board -->
+    <canvas id="drawingBoard" width="400" height="300"></canvas>
+    <button id="clearBtn">Clear</button>
+
+    <script>
+        // JavaScript for drawing board
+        const canvas = document.getElementById('drawingBoard');
+        const ctx = canvas.getContext('2d');
+        const clearBtn = document.getElementById('clearBtn');
+
+        let isDrawing = false;
+
+        function startPosition(e) {
+            isDrawing = true;
+            draw(e);
+        }
+
+        function endPosition() {
+            isDrawing = false;
+            ctx.beginPath();
+        }
+
+        function draw(e) {
+            if (!isDrawing) return;
+
+            ctx.lineWidth = 5;
+            ctx.lineCap = 'round';
+            ctx.strokeStyle = '#333';
+
+            ctx.lineTo(e.clientX - canvas.offsetLeft, e.clientY - canvas.offsetTop);
+            ctx.stroke();
+            ctx.beginPath();
+            ctx.moveTo(e.clientX - canvas.offsetLeft, e.clientY - canvas.offsetTop);
+        }
+
+        canvas.addEventListener('mousedown', startPosition);
+        canvas.addEventListener('mouseup', endPosition);
+        canvas.addEventListener('mousemove', draw);
+
+        clearBtn.addEventListener('click', () => {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="import.css">
+  <link rel="stylesheet" href="media.css">
+  <title>Wert</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="manifest" href="manifest.json">
+
+  <link rel="icon" type="image/x-icon" href="img/logo_bulb_black_circle.png">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+  <!-- Loading screen -->
+  <div class="preloader">
+    <img class="img-loader" src="img\pg-loader-2.gif">
+    <br>
+    <div class="spinner"></div>
+  </div>
+  <!-- /loading screen -->
+
+  <!-- all content -->
+  <div class="content">
+
+    <!-- navigation bar -->
+    <header>
+      <nav>
+        <ul>
+          <div class="container">
+            <div class="left">
+              <li><span class="material-symbols-outlined c1" onclick="openNav()">menu</span>
+              </li>
+
+            </div>
+            <div class="right">
+              <div class="search-container">
+                <div class="search-wrapper">
+                  <li><input type="text" id="searchInput" placeholder="Search..." onkeydown="handleKeyDown(event)"></li>
+                  <li><span onclick="search()" class="material-symbols-outlined search-event c1">search</span></li>
+                </div>
+              </div>
+              <li class="a n">Home</li>
+              <li class="a n">Account</li>
+              <li class="a n">Account</li>
+              <li class="a n">Account</li>
+              <li class="b"><span class="material-symbols-outlined b c1" onclick="openNav1()">view_cozy</span>
+              </li>
+            </div>
+          </div>
+        </ul>
+      </nav>
+    </header>
+    <!-- /navigation bar -->
+
+    <!-- menu bar 1 -->
+    <div id="mySidenav" class="sidenavmenu">
+      <div class="closehover"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></div>
+      <a href="#">About</a>
+      <div class="dropdown">
+        <a class="dropbtn" onclick="myFunction()">Github Repo ▼
+          <i class="fa fa-caret-down"></i>
+        </a>
+        <div class="dropdown-content" id="myDropdown">
+          <a href="https://github.com/PgNetwork01/Calculator">Calculator</a>
+        </div>
+      </div>
+      <div class="dropdown1">
+        <a class="dropbtn1" onclick="myFunction1()">Discord Bots
+          <i class="fa fa-caret-down"></i>
+        </a>
+        <div class="dropdown-content1" id="myDropdown1">
+          <a href="pg-economy/index.html">Pg Economy</a>
+        </div>
+      </div>
+      <a href="#">Clients</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <!-- /menu bar 1 -->
+
+    <!-- menu bar 2 -->
+    <div id="mySidenav1" class="sidenavmenu1">
+      <div class="closehover1"><a href="javascript:void(0)" class="closebtn1" onclick="closeNav1()">&times;</a></div>
+      <a href="index.html">Home</a>
+      <a href="#">Account</a>
+      <a href="#">Account</a>
+      <a href="#">Account</a>
+    </div>
+    <!-- /menu bar 2 -->
+
+    <!-- heading -->
+    <div>
+      <h1 class="wert">Wert.ED</h1>
+    </div>
+    <!-- /heading -->
+
+    <!-- bg animation -->
+    <!-- <div class="container2">
+      <img src="img/snowflake.png" style="--i:10;" class="snow"></img>
+      <img src="img/snowflake.png" class="snow" style="--i:02;"></img>
+      <img src="img/snowflake.png" class="snow" style="--i:320;"></img>
+      <img src="img/snowflake.png" class="snow" style="--i:12;"></img>
+      <img src="img/snowflake.png" class="snow" style="--i:56;"></img>
+      <img src="img/snowflake.png" class="snow" style="--i:23;"></img>
+      <img src="img/snowflake.png" class="snow" style="--i:43;"></img>
+      <img src="img/snowflake.png" class="snow" style="--i:45;"></img>
+      <img src="img/snowflake.png" class="snow" style="--i:65;"></img>
+      <img src="img/snowflake.png" class="snow" style="--i:21;"></img>
+      <img src="img/snowflake.png" class="snow" style="--i:7;"></img>
+      <img src="img/snowflake.png" class="snow" style="--i:89;"></img>
+      <img src="img/snowflake.png" class="snow" style="--i:34;"></img>
+      <img src="img/snowflake.png" class="snow" style="--i:104;"></img>
+      <img src="img/snowflake.png" class="snow" style="--i:32;"></img>
+      <img src="img/snowflake.png" class="snow" style="--i:56;"></img>
+      <img src="img/snowflake.png" class="snow" style="--i:52;"></img>
+      <img src="img/snowflake.png" class="snow" style="--i:78;"></img>
+      <img src="img/snowflake.png" class="snow" style="--i:13;"></img>
+      <img src="img/snowflake.png" class="snow" style="--i:90;"></img>
+      <img src="img/snowflake.png" class="snow" style="--i:98;"></img>
+      <img src="img/snowflake.png" class="snow" style="--i:67;"></img>
+      <img src="img/snowflake.png" class="snow" style="--i:96;"></img>
+      <img src="img/snowflake.png" class="snow" style="--i:69;"></img>
+      <img src="img/snowflake.png" class="snow" style="--i:234;"></img>
+    </div> -->
+    <!-- /bg animation -->
+
+    <!-- main content -->
+    <div class="spacer layer1"></div>
+    <section class="blue styler">
+      <h1>Welcome!</h1>
+      <p>🌟 Welcome to Wert.ed, where endless possibilities await you on the journey of knowledge and discovery! 🚀 Embrace a world where learning meets innovation, and where every click opens a door to a realm of exciting opportunities. As a new member of our vibrant community, you're not just joining a website; you're becoming a part of a dynamic ecosystem dedicated to nurturing intellect and fostering creativity. Navigate through our user-friendly interface, explore diverse content, and engage with like-minded individuals who share your passion for growth. Wert.ed is not just a destination; it's a launchpad for your curiosity. Let the adventure begin, and let your quest for knowledge soar to new heights! 🌈✨</p>
+    </section>
+    <div class="spacer layer2"></div>
+    <section class="red styler">
+      <h1>PG Bots!</h1>
+      <p>🤖 Elevate your Discord server experience with the power of PG Bots! Introducing PG Economy, a dynamic economy game bot that injects excitement into your community. Engage in thrilling economic activities, build your virtual empire, and compete with friends for the ultimate financial supremacy. But that's not all! Introduce PG Moderation to ensure a harmonious server environment. With robust moderation features, enjoy peace of mind as PG Moderation efficiently handles tasks such as content filtering, user management, and maintaining order. Inviting our bots is a breeze – simply click the links below, grant the necessary permissions, and watch as your server transforms into a hub of entertainment and order! <br><br>
+
+      🌐 <b>PG Economy Invite Link:</b> <a href="pg-economy/index.html">Pg Economy</a> <br><br>
+
+        🌐 <b>PG Moderation Invite Link:</b> <a href="#">Pg Moderation</a> <br><br>
+
+      Welcome to a new era of Discord interaction, where fun and order seamlessly coexist! 🚀✨</p>
+    </section>
+    <div class="spacer layer3"></div>
+    <section class="green styler">
+      <h1>Welcome!</h1>
+      <p>Welcome to Wert.ED, a website where you can find all the information you need about our company</p>
+    </section>
+    <div class="spacer layer4"></div>
+    <section class="purple styler">
+      <h1>Welcome!</h1>
+      <p>Welcome to Wert.ED, a website where you can find all the information you need about our company</p>
+    </section>
+    <div class="spacer layer5"></div>
+    <!-- /main content -->
+
+    <div id="searchResults"></div>
+
+    <!-- footer -->
+    <div class="footer">
+      <div class="fc1">
+        <ul class="footer-content1">
+          <li>
+            <h1>Wert.ED</h1>
+          </li>
+          <li>
+            <p>Welcome to the server! Dive into the fun and connect with the community. Feel free to explore, chat, and make yourself at home. Enjoy your stay!</p>
+          </li>
+          <li>
+            <a href="mailto:wert.ed00@gmail.com">wert.ed00@gmail.com</a>
+          </li>
+        </ul>
+      </div>
+      <div class="fc2">
+        <h2>Social Links</h2>
+        <ul>
+          <li><a href="https://discord.gg/t5adGsvjZZ">Discord</a></li>
+          <li><a>Youtube</a></li>
+          <li><a>Twitter</a></li>
+          <li><a>Instagram</a></li>
+          <li><a>Telegram</a></li>
+        </ul>
+      </div>
+    </div>
+      <footer>
+      &copy; 2023 Wert.ED. All rights reserved.
+      </footer>
+    <!-- /footer -->
+    
+  </div>
+  <!-- /all content -->
+  
+  <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyDsL56I0Xu-P3WeY3zDZL_I5kFIVwIbhPA",
+        authDomain: "wert-334dc.firebaseapp.com",
+        projectId: "wert-334dc",
+        storageBucket: "wert-334dc.appspot.com",
+        messagingSenderId: "414588852766",
+        appId: "1:414588852766:web:d733b86f1899eed914ec0f",
+        measurementId: "G-P5JCQ13JLT"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
+  <script src="index.js"></script>
+  <script src="https://www.google.com/jsapi"></script>
+
+<script>
+    // Load the Google Search API
+    google.load('search', '1', { language: 'en', style: google.loader.themes.V2_DEFAULT});
+
+    // Function to perform a Google search
+    function performSearch() {
+        var searchQuery = document.getElementById('search').value;
+
+        // Create a Search Control
+        var searchControl = new google.search.SearchControl();
+
+        // Create a Web Searcher
+        var webSearch = new google.search.WebSearch();
+
+        // Set the search query
+        webSearch.setQuery(searchQuery);
+
+        // Add the Web Searcher to the Search Control
+        searchControl.addSearcher(webSearch);
+
+        // Set the Search Control to the searchResults container
+        searchControl.draw(document.getElementById('searchResults'));
+
+        // Execute the search
+        searchControl.execute(searchQuery);
+    }
+
+    // Event listener for the search bar
+    document.getElementById('search').addEventListener('input', function (event) {
+        // Perform a search when the user types
+        performSearch();
+    });
+
+    // Initial search on page load (optional)
+    // performSearch();
+</script>
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/sw.js')
+        .then(registration => console.log('Service Worker registered:', registration))
+        .catch(error => console.error('Service Worker registration failed:', error));
+    });
+  }
+</script>
+<script>
+  if (Notification.permission === 'default') {
+  Notification.requestPermission().then(permission => {
+    if (permission === 'granted') {
+      console.log('Notification permission granted');
+    }
+  });
+}
+
+self.addEventListener('notificationclick', event => {
+  event.notification.close();
+
+  // Perform action when notification is clicked
+  // For example, navigate to a specific URL
+  clients.openWindow('index.html');
+});
+
+</script>
+
+</body>
+
+</html>

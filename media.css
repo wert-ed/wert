@@ -1,0 +1,55 @@
+@media only screen and (max-width: 474px) {
+  .head-text {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    flex-direction: column-reverse;
+    font-family: 'Pacifico', cursive;
+    font-size: xx-large;
+    text-shadow: 0px 0px 20px #ff1111;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .navlogo {
+    display: none;
+    width: 0px;
+    height: 0px;
+    justify-content: center;
+    overflow: auto;
+  }
+
+  .navlogo1 {
+    display: block;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    overflow: auto;
+  }
+}
+
+@media only screen and (max-width: 265px) {
+  .computer-img {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .wert {
+    font-size: 50px;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .a {
+    display: none;
+  }
+}
+
+  @media only screen and (min-width: 620px) {
+  .b {
+    display: none;
+  }
+}
