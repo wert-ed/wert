@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1080" height="1080" viewBox="0 0 1080 1080" xml:space="preserve">
+<desc>Created with Fabric.js 5.2.4</desc>
+<defs>
+</defs>
+<g transform="matrix(1 0 0 1 540 540)" id="41bb37c4-6861-4e57-9647-ebdaf6e416a5"  >
+<rect style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1; visibility: hidden;" vector-effect="non-scaling-stroke"  x="-540" y="-540" rx="0" ry="0" width="1080" height="1080" />
+</g>
+<g transform="matrix(1 0 0 1 540 540)" id="c7e62336-b6a9-46e3-ae44-0a4e67ced543"  >
+</g>
+<g transform="matrix(1.59 0 0 1.59 522.65 561.03)" style="filter: url(#SVGID_5);" id="829f2bbf-e8e2-42bf-a5ba-fe9f0c7a55b6"  >
+<filter id="SVGID_5" y="-51%" height="202%" x="-26%" width="152%" >
+	<feGaussianBlur in="SourceAlpha" stdDeviation="25"></feGaussianBlur>
+	<feOffset dx="0" dy="0" result="oBlur" ></feOffset>
+	<feFlood flood-color="rgb(0,0,0)" flood-opacity="1"/>
+	<feComposite in2="oBlur" operator="in" />
+	<feMerge>
+		<feMergeNode></feMergeNode>
+		<feMergeNode in="SourceGraphic"></feMergeNode>
+	</feMerge>
+</filter>
+		<text xml:space="preserve" font-family="Raleway" font-size="142" font-style="normal" font-weight="900" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(101,0,255); fill-rule: nonzero; opacity: 1; white-space: pre;" ><tspan x="-294.65" y="44.61" >W</tspan><tspan x="-151.23" y="44.61" >e</tspan><tspan x="-61.2" y="44.61" >r</tspan><tspan x="1.42" y="44.61" >t</tspan><tspan x="65.04" y="44.61" >.</tspan><tspan x="104.65" y="44.61" style="fill: rgb(239,0,255); ">E</tspan><tspan x="192.98" y="44.61" style="fill: rgb(239,0,255); ">D</tspan></text>
+</g>
+</svg>
