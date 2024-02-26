@@ -60,5 +60,3 @@ Connect with us on social media for the latest updates, news, and announcements:
 © 2023 Wert.ED. All rights reserved.
 
 ---
-
-Feel free to customize this README according to your website's specific features, content, and branding.
