@@ -1,5 +1,3 @@
-Sure, here's a sample README file for your Wert.ED website:
-
 ---
 
 # Wert.ED Website
